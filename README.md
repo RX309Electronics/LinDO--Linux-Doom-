@@ -23,6 +23,9 @@ So at boot the kernel and RAMDISK are loaded into memory. Then the kernel gets e
 ### Why is there a DOOM.tar.xz archive, why not just the bare files?
 Because i found out that the fbdoom binary together with its WAD file and bootstrap script i made took up around 5.5 Megabytes and i wanted to shrink that down so we could get the <3 Megabyte filesystem. So i compressed it as a tar.xz archive to shrink it down to 1.8 Megabytes which is super tiny! Also i saw on some IP cam i was taking a look at the other day, that the vendors also packaged the core binary into a compressed archive to save space so i also thought 'why not?'. 
 
+#### DId you use AI?
+I did not use any AI in this project. Not only am i highly againts AI slop and vibecoding, in general this project is too easy/short to make without any AI usage needed so i did not use any AI model. Not even in the debugging/configuration phase.
+
 ### Limitations
 So as i might have said earlier, there is no hardware accelerated graphics as everything makes use of the plain old framebuffer, so gameplay might be slugish/bad. Also there is no sound as there are no drivers enabled for it and the fbdoom binary i compiled has no sound. And some other drivers that might be needed are not enabled as this kernel is stripped to its bare core ofcourse. But my goal was not gameplay. It was rather a challenge to myself to make a super duper small linux distro that only has 1 task and thats to run DOOM and i succeeded at that! This is not even a serious project with any dedication and it was more a weird random brain spark that i came up with and is one of those million weird useless projects that are completely useless/dont benefit anything, but are fun to make just to get it out of my head. I also came up with and made it in 45 minutes (excluding any compilation time). 
 
